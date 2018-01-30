@@ -1,0 +1,14 @@
+{
+    "name": "mardell/cacheversion",
+    "type": "magento-module",
+    "description": "A little tiny Magento 1 module that adds a version string to CSS and JS files",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name": "Andy Mardell",
+            "website": "https://mardell.me/"
+        }
+    ]
+}
