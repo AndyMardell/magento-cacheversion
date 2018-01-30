@@ -1,6 +1,14 @@
 # Magento 1 Cache Version
 A little tiny Magento 1 module that adds a version string to CSS and JS files
 
+Before installation:
+
+`<link rel="stylesheet" type="text/css" href="http://yourwebsite.com/skin/frontend/base/default/css/style.css" />`
+
+After installation:
+
+`<link rel="stylesheet" type="text/css" href="http://yourwebsite.com/skin/frontend/base/default/css/style.css?v=1.0" />`
+
 ## Installation
 Install like any other Magento module.
 
