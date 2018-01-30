@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mardell_Cacheversion>
+        <active>true</active>
+        <codePool>local</codePool>
+    </Mardell_Cacheversion>
+    </modules>
+</config>

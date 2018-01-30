@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author      Andy Mardell <andy@mardell.me>
+ * @website     https://mardell.me
+ */
+-->
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<cacheversion>
+										<title>Cache Version</title>
+									</cacheversion>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

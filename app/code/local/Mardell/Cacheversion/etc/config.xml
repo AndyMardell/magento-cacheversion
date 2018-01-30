@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Andy Mardell <andy@mardell.me>
+ * @website     https://mardell.me
+ */
+-->
+<config>
+    <modules>
+        <Mardell_Cacheversion>
+            <version>1.0.0</version>
+        </Mardell_Cacheversion>
+    </modules>
+    <global>
+        <blocks>
+            <page>
+                <rewrite>
+                    <html_head>Mardell_Cacheversion_Block_Html_Head</html_head>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+    <default>
+        <cacheversion>
+            <css>
+                <version>1.0</version>
+            </css>
+            <js>
+                <version>1.0</version>
+            </js>
+        </cacheversion>
+    </default>
+</config>
