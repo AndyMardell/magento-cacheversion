@@ -44,6 +44,7 @@ class Mardell_Cacheversion_Block_Html_Head extends Mage_Page_Block_Html_Head
         $shouldMergeJs = Mage::getStoreConfigFlag('dev/js/merge_files');
         $shouldMergeCss = Mage::getStoreConfigFlag('dev/css/merge_css_files');
         $cacheEnabled = Mage::getStoreConfig('cacheversion/general/enabled');
+        $cachePrefix = Mage::getStoreConfig('cacheversion/general/prefix');
         $cacheCssEnabled = Mage::getStoreConfig('cacheversion/css/enabled');
         $cacheCssVersion = Mage::getStoreConfig('cacheversion/css/version');
         $cacheJsEnabled = Mage::getStoreConfig('cacheversion/js/enabled');
@@ -64,7 +65,7 @@ class Mardell_Cacheversion_Block_Html_Head extends Mage_Page_Block_Html_Head
 
             // static and skin css
             if ($cacheEnabled && $cacheCssEnabled && $cacheCssVersion) {
-                $html .= $this->_prepareStaticAndSkinElements('<link rel="stylesheet" type="text/css" href="%s?v='.$cacheCssVersion.'"%s />'."\n",
+                $html .= $this->_prepareStaticAndSkinElements('<link rel="stylesheet" type="text/css" href="%s?'.$cachePrefix.$cacheCssVersion.'"%s />'."\n",
                     empty($items['js_css']) ? array() : $items['js_css'],
                     empty($items['skin_css']) ? array() : $items['skin_css'],
                     $shouldMergeCss ? array(Mage::getDesign(), 'getMergedCssUrl') : null
@@ -79,7 +80,7 @@ class Mardell_Cacheversion_Block_Html_Head extends Mage_Page_Block_Html_Head
 
             // static and skin javascripts
             if ($cacheEnabled && $cacheJsEnabled && $cacheJsVersion) {
-                $html .= $this->_prepareStaticAndSkinElements('<script type="text/javascript" src="%s?v='.$cacheJsVersion.'"%s></script>' . "\n",
+                $html .= $this->_prepareStaticAndSkinElements('<script type="text/javascript" src="%s?'.$cachePrefix.$cacheJsVersion.'"%s></script>' . "\n",
                     empty($items['js']) ? array() : $items['js'],
                     empty($items['skin_js']) ? array() : $items['skin_js'],
                     $shouldMergeJs ? array(Mage::getDesign(), 'getMergedJsUrl') : null

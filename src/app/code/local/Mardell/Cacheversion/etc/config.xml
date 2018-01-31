@@ -22,6 +22,9 @@
     </global>
     <default>
         <cacheversion>
+            <general>
+                <prefix>v=</prefix>
+            </general>
             <css>
                 <version>1.0</version>
             </css>
