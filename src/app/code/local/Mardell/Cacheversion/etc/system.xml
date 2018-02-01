@@ -7,15 +7,15 @@
 -->
 <config>
     <tabs>
-        <cacheconf translate="label">
-            <label>Cache Version</label>
+        <mardell translate="label">
+            <label>Mardell</label>
             <sort_order>150</sort_order>
-        </cacheconf>
+        </mardell>
     </tabs>
     <sections>
         <cacheversion translate="label" module="adminhtml">
-            <label>Configuration</label>
-            <tab>cacheconf</tab>
+            <label>Cache Version</label>
+            <tab>mardell</tab>
             <sort_order>10</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
