@@ -7,7 +7,11 @@ Before installation:
 
 After installation:
 
-`<link rel="stylesheet" type="text/css" href="http://yourwebsite.com/skin/frontend/base/default/css/style.css?v=1.0" />`
+`<link rel="stylesheet" type="text/css" href="http://yourwebsite.com/skin/frontend/base/default/css/style.css?v=1.2" />`
+
+Config:
+
+![Magento 1 Cache Version](https://i.imgur.com/FcodxV6.png)
 
 ## Installation
 Install like any other Magento module.
